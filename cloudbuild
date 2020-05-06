@@ -1,0 +1,7 @@
+steps:
+ - name: gcr.io/cloud-builders/git
+   args: ['clone',''--branch dev, 'https://github.com/naveenkumar463/demo_sjsu']
+ - name: 'gcr.io/cloud-builders/gsutil'
+   args: ['cp', 'GCPCDW/*.py', 'gs://demo_sjsu_dev_master/code_files']
+   
+   
